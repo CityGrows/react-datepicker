@@ -6,7 +6,6 @@
   "license": "MIT",
   "homepage": "https://github.com/Hacker0x01/react-datepicker",
   "main": "dist/index.js",
-  "prepublish": "npm run build",
   "browser": "dist/react-datepicker.min.js",
   "module": "dist/es/index.js",
   "unpkg": "dist/react-datepicker.min.js",
@@ -139,7 +138,8 @@
     "css:modules:dev": "sass --style expanded src/stylesheets/datepicker-cssmodules.scss | tee dist/react-datepicker-cssmodules.css dist/react-datepicker.module.css",
     "build:js": "rollup -c",
     "js:dev": "rollup -cw",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prepublish": "npm run build"
   },
   "lint-staged": {
     "*.{js,jsx,json,css,scss,md}": [
