@@ -138,8 +138,7 @@
     "css:modules:dev": "sass --style expanded src/stylesheets/datepicker-cssmodules.scss | tee dist/react-datepicker-cssmodules.css dist/react-datepicker.module.css",
     "build:js": "rollup -c",
     "js:dev": "rollup -cw",
-    "prepare": "husky install",
-    "prepublish": "npm run build"
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{js,jsx,json,css,scss,md}": [
